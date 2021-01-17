@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Interview Q/A</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <div class="container">
+        <nav class="hidden">
+            <p id="restart">Restart</p>
+        </nav>
+        
         <div class="flip-card" id="deck">
             <div class="flip-card-inner" id="turn-card">
-                <div class="flip-card-front">
+                <div class="flip-card-front" style="cursor: pointer;">
                 </div>
                 <div class="flip-card-back">
-                    <a href="https://www.vecteezy.com/free-vector/technical" class="top"><img src="assets/img/gears.svg"></a>
+                    <span class="top"><i class="fa fa-gear big"></i><i class="fa fa-gear small"></i></span>
                     <p class="text"> </p>
-                    <a href="https://www.vecteezy.com/free-vector/technical" class="bottom"><img src="assets/img/gears.svg"></a>
+                    <span class="bottom"><i class="fa fa-gear small"></i><i class="fa fa-gear big"></i></span>
                 </div>
             </div>
         </div>
         <div class="flip-card" id="card"></div>
+
+        <button><i class="fa fa-gear" id="spinner"></i></button>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
